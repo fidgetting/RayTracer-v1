@@ -1,0 +1,90 @@
+Material material1
+	Lambertian 1 1 1 EndLambertian
+  Specular 0 50 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material material2
+	Lambertian 0.5 0.5 0.5 EndLambertian
+	Specular 0.5 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material material3
+	Lambertian 0.25 0 0 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material material4
+	Lambertian 0 0 0.05 EndLambertian
+	Specular 0.95 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Shape UnitCube
+   Polygon
+      Vertex -0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5  0.5 -0.5 EndVertex
+      Vertex -0.5  0.5 -0.5 EndVertex
+   EndPolygon
+   Polygon
+      Vertex -0.5 -0.5 0.5 EndVertex
+      Vertex  0.5 -0.5 0.5 EndVertex
+      Vertex  0.5  0.5 0.5 EndVertex
+      Vertex -0.5  0.5 0.5 EndVertex
+   EndPolygon
+    Polygon
+      Vertex -0.5 -0.5 -0.5 EndVertex
+      Vertex -0.5 -0.5  0.5 EndVertex
+      Vertex -0.5  0.5  0.5 EndVertex
+      Vertex -0.5  0.5 -0.5 EndVertex
+   EndPolygon
+    Polygon
+      Vertex 0.5 -0.5 -0.5 EndVertex
+      Vertex 0.5 -0.5  0.5 EndVertex
+      Vertex 0.5  0.5  0.5 EndVertex
+      Vertex 0.5  0.5 -0.5 EndVertex
+   EndPolygon
+   Polygon
+      Vertex -0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5 -0.5  0.5 EndVertex
+      Vertex -0.5 -0.5  0.5 EndVertex
+   EndPolygon
+   Polygon
+      Vertex -0.5 0.5 -0.5 EndVertex
+      Vertex  0.5 0.5 -0.5 EndVertex
+      Vertex  0.5 0.5  0.5 EndVertex
+      Vertex -0.5 0.5  0.5 EndVertex
+   EndPolygon
+EndShape
+
+Shape UnitSphere
+   Sphere 
+      Vertex 0.0 0.0 0.0 EndVertex
+      Radius 0.5
+   EndSphere
+EndShape
+
+Object UnitSphere material3
+   Scale 600 EndScale
+   Translate 120 30 -150 EndTranslate
+EndObject
+Object UnitCube material4
+   Scale 5000 EndScale
+   Rotate 0 0 1 0.1 1 0 EndRotate
+   Translate 1000 0 0 EndTranslate
+EndObject
+
+Camera
+1 0.5 1
+0 1 0
+1000 500 1000
+500
+-400 400 -400 400
+EndCamera
+
+LightSource
+Illuminant 255 255 255 EndIlluminant
+Position
+    1000 700 700 1 EndPosition
+EndLightSource
+

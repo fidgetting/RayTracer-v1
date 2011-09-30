@@ -1,0 +1,172 @@
+Material diffuse_white
+	Lambertian 1 1 1 EndLambertian
+  Specular 0 50 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material diffuse_red
+	Lambertian 1 0 0 EndLambertian
+	Specular 0 50 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material diffuse_green
+	Lambertian 0 1 0 EndLambertian
+	Specular 0 50 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material diffuse_blue
+	Lambertian 0 0 1 EndLambertian
+	Specular 0 50 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material average_white
+	Lambertian 0.5 0.5 0.5 EndLambertian
+	Specular 0.5 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material dull_purple
+	Lambertian 0.25 0 0.25 EndLambertian
+	Specular 0.5 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material specular_white
+	Lambertian 0.25 0.25 0.25 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material specular_red
+	Lambertian 0.25 0 0 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material specular_green
+	Lambertian 0 0.25 0 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material specular_blue
+	Lambertian 0 0 0.25 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material specular_yellow
+	Lambertian 0.25 0.25 0 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material specular_purple
+	Lambertian 0.25 0 0.25 EndLambertian
+	Specular 0.75 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material very_specular_white
+	Lambertian 0.05 0.05 0.05 EndLambertian
+	Specular 0.95 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material very_specular_red
+	Lambertian 0.05 0 0 EndLambertian
+	Specular 0.95 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material very_specular_green
+	Lambertian 0 0.05 0 EndLambertian
+	Specular 0.95 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material very_specular_blue
+	Lambertian 0 0 0.05 EndLambertian
+	Specular 0.95 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material very_specular_purple
+	Lambertian 0.05 0 0.05 EndLambertian
+	Specular 0.95 200 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+Material mirror
+	Lambertian 0 0 0 EndLambertian
+	Specular 1 500 EndSpecular
+	Translucence 0 0 EndTranslucence
+EndMaterial
+
+Shape UnitCube
+   Polygon
+      Vertex -0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5  0.5 -0.5 EndVertex
+      Vertex -0.5  0.5 -0.5 EndVertex
+   EndPolygon
+   Polygon
+      Vertex -0.5 -0.5 0.5 EndVertex
+      Vertex  0.5 -0.5 0.5 EndVertex
+      Vertex  0.5  0.5 0.5 EndVertex
+      Vertex -0.5  0.5 0.5 EndVertex
+   EndPolygon
+    Polygon
+      Vertex -0.5 -0.5 -0.5 EndVertex
+      Vertex -0.5 -0.5  0.5 EndVertex
+      Vertex -0.5  0.5  0.5 EndVertex
+      Vertex -0.5  0.5 -0.5 EndVertex
+   EndPolygon
+    Polygon
+      Vertex 0.5 -0.5 -0.5 EndVertex
+      Vertex 0.5 -0.5  0.5 EndVertex
+      Vertex 0.5  0.5  0.5 EndVertex
+      Vertex 0.5  0.5 -0.5 EndVertex
+   EndPolygon
+   Polygon
+      Vertex -0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5 -0.5 -0.5 EndVertex
+      Vertex  0.5 -0.5  0.5 EndVertex
+      Vertex -0.5 -0.5  0.5 EndVertex
+   EndPolygon
+   Polygon
+      Vertex -0.5 0.5 -0.5 EndVertex
+      Vertex  0.5 0.5 -0.5 EndVertex
+      Vertex  0.5 0.5  0.5 EndVertex
+      Vertex -0.5 0.5  0.5 EndVertex
+   EndPolygon
+EndShape
+Shape UnitSphere
+   Sphere 
+      Vertex 0.0 0.0 0.0 EndVertex
+      Radius 0.5
+   EndSphere
+EndShape
+Object UnitSphere very_specular_blue
+Scale 5000 EndScale
+Translate -300 -25 0 EndTranslate
+EndObject
+Object UnitSphere specular_purple
+Scale 600 EndScale
+Translate 120 30 -150 EndTranslate
+EndObject
+Object UnitSphere specular_green
+Scale 200 EndScale
+Translate 180 70 150 EndTranslate
+EndObject
+Object UnitSphere specular_red
+Scale 1200 EndScale
+Translate -830 0 -10 EndTranslate
+EndObject
+
+Camera
+0 0 1
+0 1 0
+-300 -25 2499
+1800
+-840 839 -525 524
+EndCamera
+
+
+LightSource
+Illuminant 255 255 255 EndIlluminant
+Position
+    1000 700 700 1 EndPosition
+EndLightSource
+LightSource
+Illuminant 255 255 255 EndIlluminant
+Position
+    -900 -350 700 1 EndPosition
+EndLightSource
+

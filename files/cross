@@ -1,0 +1,49 @@
+Shape Sphere
+   Sphere
+      Vertex 0.0 0.0 0.0 EndVertex
+      Radius 0.5
+   EndSphere
+EndShape
+
+Material mat1
+        Lambertian 0 1 0 EndLambertian
+        Specular 0.0 50 EndSpecular
+        Translucence 0 0 EndTranslucence
+EndMaterial
+Material mat2
+        Lambertian 0 0 1 EndLambertian
+        Specular 0.0 200 EndSpecular
+        Translucence 0 0 EndTranslucence
+EndMaterial
+Material mat3
+        Lambertian 0.5 0 0 EndLambertian
+        Specular 0.5 10.0 EndSpecular
+        Translucence 0 0 EndTranslucence
+EndMaterial
+Material mat4
+        Lambertian 1 0 0 EndLambertian
+        Specular 0.0 10.0 EndSpecular
+        Translucence 0 0 EndTranslucence
+EndMaterial
+
+Object Sphere mat3
+    Scale 300.0 EndScale
+    Translate 0.0 0.0 -800.0 EndTranslate
+EndObject
+
+LightSource
+    Illuminant 255 255 255 EndIlluminant
+    Position 0 0 0 -1 EndPosition
+EndLightSource
+LightSource
+    Illuminant 0 255 0 EndIlluminant
+    Position -1 -1 -1 0 EndPosition
+EndLightSource
+
+Camera
+   0.75 0.6 1.0
+   0.0 1.0 0.0
+   500.0 400.0 0.0
+   600
+   -350 350 -350 350
+EndCamera

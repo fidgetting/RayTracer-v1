@@ -1,0 +1,129 @@
+Shape SphereRing
+	Sphere
+		Vertex 100 0 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 0 100 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 0 -100 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -100 0 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 7.071067812 7.071067812 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 7.071067812 -7.071067812 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -7.071067812 -7.071067812 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -7.071067812 7.071067812 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 9.238795325 3.826834324 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 9.238795325 -3.826834324 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -9.238795325 -3.826834324 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -9.238795325 3.826834324 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 3.826834324 9.238795325 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex 3.826834324 -9.238795325 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -3.826834324 -9.238795325 0 EndVertex
+		Radius 1
+	EndSphere
+	Sphere
+		Vertex -3.826834324 9.238795325 0 EndVertex
+		Radius 1
+	EndSphere
+EndShape
+Shape UnitSphere
+	Sphere
+		Vertex 0 0 0 EndVertex
+		Radius 0.5
+	EndSphere
+EndShape
+Material Red
+Lambertian .5 .1 .1 EndLambertian
+Specular .2 2 EndSpecular
+Translucence 0 0 EndTranslucence
+EndMaterial
+Material Green
+Lambertian .1 .5 .1 EndLambertian
+Specular .2 2 EndSpecular
+Translucence 0 0 EndTranslucence
+EndMaterial
+Material Pink
+Lambertian .5 .5 .1 EndLambertian
+Specular .2 2 EndSpecular
+Translucence 0 0 EndTranslucence
+EndMaterial
+Material Blue
+Lambertian .1 .1 .5 EndLambertian
+Specular .2 2 EndSpecular
+Translucence 0 0 EndTranslucence
+EndMaterial
+Material Mirror
+Lambertian 0 0 0 EndLambertian
+Specular 1 3 EndSpecular
+Translucence 0 0 EndTranslucence
+EndMaterial
+Object SphereRing Red
+	Scale 92 EndScale
+EndObject
+Object SphereRing Green
+	Scale 92 EndScale
+	Rotate 0 1 0 1 0 0 EndRotate
+EndObject
+Object SphereRing Pink
+	Scale 92 EndScale
+	Rotate 1 0 0 0 0 1 EndRotate
+EndObject
+Object UnitSphere Mirror
+	Scale 925 EndScale
+EndObject
+LightSource
+	Illuminant 255 255 255 EndIlluminant
+	Position 0 0 -1000 1 EndPosition
+EndLightSource
+LightSource
+	Illuminant 255 255 0 EndIlluminant
+	Position 0 -1800 1000 1 EndPosition
+EndLightSource
+
+Camera
+	-.5 -1 -1
+	0 1 0
+	-5000 -10000 -10000
+	12900
+	-960 959 -600 599
+EndCamera
+
+
