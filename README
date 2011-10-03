@@ -14,8 +14,8 @@ My graphics class also used a very simplified object file format. Because of
 this I have included a few object files that I think produce pretty pictures.
 The files are fairly self explanatory, so if your interested in making a new
 image I leave it to the user to figure out how. I do have a uncompleted version
-that can handle .obj files that I will be finishing this semester.s
+that can handle .obj files that I will be finishing this semester.
 
-The only current dependency is opencv. This was used as it has a very simply gui
+The only current dependency is opencv. This was used as it has a very simple gui
 to display the pictures in the library and an easy method for saving images to
 a better file format than ppm.
