@@ -1,0 +1,21 @@
+This is a simple ray tracer that was written for a graphics class I took in the
+fall of 2010. I have released it in hopes that I may point to it and say "look
+what I did, isn't it cool." I would like to apologize for the messiness of some
+of the code, the class was rather intense and I have not been able to clean up
+all of the truly bad code that was included.
+
+Since the end of the class, I have changed it to animate the rendering process
+in real time, and render on multiple cores. As this is entirely written without
+any hardware acceleration, the rendering process is quite slow for more complex
+images, the concurrency helped with this some. That and I enjoyed developing the
+parallelization.
+
+My graphics class also used a very simplified object file format. Because of
+this I have included a few object files that I think produce pretty pictures.
+The files are fairly self explanatory, so if your interested in making a new
+image I leave it to the user to figure out how. I do have a uncompleted version
+that can handle .obj files that I will be finishing this semester.s
+
+The only current dependency is opencv. This was used as it has a very simply gui
+to display the pictures in the library and an easy method for saving images to
+a better file format than ppm.
